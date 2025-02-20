@@ -6,9 +6,14 @@ const pageTitle = "Tag Index";
 ---
 <BaseLayout pageTitle={pageTitle}>
     <p>Tags:</p>
-    <ul>
+    <ul class="tags">
         {tags.map((tag) => (
             <li><a href={`/tags/${tag}`}>{tag}</a></li>
         ))}
     </ul>
 </BaseLayout>
+<style>
+    a {
+        color: #00539F;
+    }
+</style>
